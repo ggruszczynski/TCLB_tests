@@ -25,8 +25,8 @@
                 <Params VelocityY="0.000000" />
     </Model> 
 	<Failcheck Iterations="1000" nx="128.000000" ny="128.000000" nz="3" />
-	<Solve Iterations="10000">
-		<VTK Iterations="1000" />
+	<Solve Iterations="5000">
+		<VTK Iterations="1000" what="T,U,Rho"/>
 	</Solve>
 </CLBConfig>
 

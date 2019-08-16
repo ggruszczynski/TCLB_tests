@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<VTKFile type="PImageData" version="0.1" byte_order="LittleEndian">
+<PImageData WholeExtent="0 224 0 36 0 3" Origin="0 0 0" Spacing="1 1 1">
+<Piece Extent="0 224 0 36 0 3" Source="HotKarmanLimiters3D_template_CM_HIGHER_EConvect_Re_66_sizer_0.25_nu_3e-03_isnulim_TRUE_k_3e-03_isklim_TRUE_VTK_P00_00010000.vti"/>
+<PCellData Scalars="rho" Vectors="velocity">
+<PDataArray type="Float64" Name="Rho" format="binary" encoding="base64" NumberOfComponents="1"/>
+<PDataArray type="Float64" Name="T" format="binary" encoding="base64" NumberOfComponents="1"/>
+<PDataArray type="Float64" Name="U" format="binary" encoding="base64" NumberOfComponents="3"/>
+</PCellData>
+</PImageData>
+</VTKFile>
