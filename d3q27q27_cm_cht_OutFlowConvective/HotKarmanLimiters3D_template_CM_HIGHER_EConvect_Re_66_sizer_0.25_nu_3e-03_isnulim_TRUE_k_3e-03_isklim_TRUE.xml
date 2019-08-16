@@ -1,20 +1,20 @@
 
 <?xml version="1.0"?>
 <CLBConfig version="2.0" output="output/">
-    <Geometry nx="200" ny="36" nz="3" >   
+    <Geometry nx="128" ny="36" nz="3" >   
       <CM_HIGHER> <Box/> </CM_HIGHER>  
       <WVelocity><Inlet/></WVelocity>
       <EConvect> <Outlet/> </EConvect>  
         <Wall mask="ALL">
-          <Cylinder dx="71" dy="14" nx="8" ny="8" nz="3"/>
+          <Cylinder dx="59" dy="14" nx="8" ny="8" nz="3"/>
         </Wall>
 
         <HeaterDirichletTemperatureEQ name="dirichlet_hot" mask="COLLISION"> 
-          <Cylinder dx="71" dy="14" nx="8" ny="8" nz="3"/>
+          <Cylinder dx="59" dy="14" nx="8" ny="8" nz="3"/>
         </HeaterDirichletTemperatureEQ>  
         
         <ForceMeasurment>
-          <Cylinder dx="71" dy="14" nx="8" ny="8" nz="3"/>
+          <Cylinder dx="59" dy="14" nx="8" ny="8" nz="3"/>
         </ForceMeasurment>
 
         <FluxMeasurment> <Box dx="-10" nx="1"/> </FluxMeasurment>
@@ -37,12 +37,12 @@
             material_density="1"
             />
         <Params/>
-        <Params VelocityX="0.025" />
+        <Params VelocityX="0.05" />
     </Model>
 
-<Solve Iterations="10000"> 
+<Solve Iterations="2000"> 
     <Failcheck Iterations="1000" nx="250.000000" ny="37.500000" nz="3" />
-    <Log Iterations="1000"/>
+    <Log Iterations="100"/>
     <VTK Iterations="1000" what="T,U,Rho"/> 
 </Solve>
 </CLBConfig>

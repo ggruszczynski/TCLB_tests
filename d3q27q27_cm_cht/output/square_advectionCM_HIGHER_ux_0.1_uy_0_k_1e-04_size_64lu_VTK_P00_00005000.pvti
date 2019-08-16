@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <VTKFile type="PImageData" version="0.1" byte_order="LittleEndian">
-<PImageData WholeExtent="0 128 0 128 0 3" Origin="0 0 0" Spacing="1 1 1">
-<Piece Extent="0 128 0 128 0 3" Source="square_advectionCM_HIGHER_ux_0.1_uy_0_k_1e-04_size_128lu_VTK_P00_00005000.vti"/>
+<PImageData WholeExtent="0 64 0 64 0 3" Origin="0 0 0" Spacing="1 1 1">
+<Piece Extent="0 64 0 64 0 3" Source="square_advectionCM_HIGHER_ux_0.1_uy_0_k_1e-04_size_64lu_VTK_P00_00005000.vti"/>
 <PCellData Scalars="rho" Vectors="velocity">
 <PDataArray type="Float64" Name="Rho" format="binary" encoding="base64" NumberOfComponents="1"/>
 <PDataArray type="Float64" Name="T" format="binary" encoding="base64" NumberOfComponents="1"/>
